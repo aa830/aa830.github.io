@@ -31,6 +31,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+include:
+  - assets/css/style.css
+
 # Social media (optional)
 social_links:
   github: "https://github.com/aa830"
