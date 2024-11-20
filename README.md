@@ -12,5 +12,5 @@ A fun and simple terminal-based project visualizing a 3D spinning donut using C.
 
 To install Donut C via Homebrew, use the following commands:
 
-brew tap aa830/formulae
-brew install donut
+`brew tap aa830/formulae`
+`brew install donut`
