@@ -1,48 +1,36 @@
 # _config.yml
 
 # Site settings
-title: "aa830's page"
-description: "idk just some of my repos"
-author: "aa830"
-url: "https://aa830.github.io" # The base URL of your GitHub Pages site
+title: "aa830's github website"
+description: "idk some of my code"
+url: "https://aa830.github.io" # Your GitHub Pages URL
+baseurl: "" # The subpath of your site, e.g., /blog (leave empty if in the root directory)
 
-# Optional social links (uncomment if you want to add these)
-# social:
-   github: "https://github.com/aa830"
-#   twitter: "https://twitter.com/yourusername"
+# Owner/author information
+author:
+  name: "aarav darbari"
+  email: "aarvd2030@gmail.com"
+  url: "https://aa830.github.io" # Link to your site or another profile
 
 # Build settings
-baseurl: "" # Leave blank unless publishing to a subdirectory
-theme: jekyll-theme-minimal # Uses a clean, minimalist Jekyll theme
-
-# Optional markdown and syntax highlighting settings
 markdown: kramdown
-highlighter: rouge
-
-# Plugins (GitHub Pages supports several Jekyll plugins by default)
+theme: minimal # Default theme provided by Jekyll
 plugins:
-  - jekyll-feed # Generates an RSS feed
-  - jekyll-sitemap # Generates a sitemap for SEO
-  - jekyll-seo-tag # Adds SEO metadata to your site
+  - jekyll-feed   # RSS feed generator
 
-# Optional pagination (uncomment if needed)
-# paginate: 5 # Number of posts per page in pagination
-# paginate_path: "/page:num/"
+# GitHub Pages settings
+github:
+  is_project_page: false # Set to true if this is a project site instead of a user/organization site
 
-# Exclude these files from the build
+# SEO settings
+permalink: "/:year/:month/:day/:title/" # Pretty URLs with date
+paginate: 5 # Number of posts per page in pagination
+
+# Exclusions
 exclude:
-  - README.md
   - Gemfile
   - Gemfile.lock
 
-# Defaults for posts layout and metadata
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true # Enable comments if you plan to use a service like Disqus
-
-# Optional Google Analytics (uncomment and replace with your ID if needed)
-# google_analytics: "UA-XXXXXXXXX-X"
+# Social media (optional)
+social_links:
+  github: "https://github.com/aa830"
