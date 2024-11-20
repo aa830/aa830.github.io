@@ -32,9 +32,19 @@ exclude:
 include:
   - assets/css/style.css
 
+# Theme configuration
+theme: minima # Using the Minima theme (you can customize it with your own CSS)
+
 # Social media (optional)
 social_links:
   github: "https://github.com/aa830"
 
-# Theme configuration
-theme: minima # Default Jekyll theme (can be customized in CSS)
+# Minima theme settings (overrides)
+minima:
+  skin: dark # Using the dark mode for Minima theme
+  header_color: "#232136" # Custom color for the header
+  accent_color: "#569fba" # Accent color for links/buttons
+  font_family:
+    base: "'MonoLisa', sans-serif" # Use MonoLisa as the base font
+    headings: "'MonoLisa', sans-serif"
+    monospace: "'MonoLisa', monospace"

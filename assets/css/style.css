@@ -61,17 +61,27 @@
     --indexed-color-16: #ea9a97;
     --indexed-color-17: #eb98c3;
   }
-
-
-  /* Applying Duskfox-inspired theme */
-
-/* Background and Text */
-body {
+  
+  /* Importing MonoLisa Font */
+  @font-face {
+    font-family: 'MonoLisa';
+    src: 
+         url('../fonts/MonoLisa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'MonoLisa', monospace;
     background-color: var(--background-color);
     color: var(--foreground-color);
     transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
   }
   
+  /* Link Styles */
   a {
     color: var(--color-blue);
     text-decoration: none;
@@ -81,13 +91,13 @@ body {
     color: var(--bright-blue);
   }
   
-  /* Cursor styles */
+  /* Cursor Styles */
   .cursor {
     background-color: var(--cursor-color);
     color: var(--cursor-text-color);
   }
   
-  /* Search highlights */
+  /* Search Highlights */
   .search-match {
     background-color: var(--search-match-background);
     color: var(--search-match-foreground);
@@ -98,13 +108,15 @@ body {
     color: var(--search-match-foreground);
   }
   
-  /* Footer bar */
+  /* Footer Bar */
   .footer-bar {
     background-color: var(--footer-bar-background);
     color: var(--footer-bar-foreground);
+    padding: 10px;
+    text-align: center;
   }
   
-  /* Code blocks and selection */
+  /* Code Blocks and Text Selection */
   code, pre {
     background-color: var(--selection-background);
     color: var(--dim-white);
@@ -117,7 +129,7 @@ body {
     color: var(--foreground-color);
   }
   
-  /* Buttons and accents */
+  /* Button Styles */
   button, .button {
     background-color: var(--color-blue);
     color: var(--background-color);
@@ -125,13 +137,14 @@ body {
     padding: 8px 12px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s;
   }
   
   button:hover, .button:hover {
     background-color: var(--bright-blue);
   }
   
-  /* Hint styles */
+  /* Hint Styles */
   .hint-start {
     background-color: var(--hint-start-background);
     color: var(--search-match-foreground);
@@ -141,23 +154,15 @@ body {
     background-color: var(--hint-end-background);
     color: var(--search-match-foreground);
   }
-
-  /* assets/css/style.css */
-
-/* Importing MonoLisa Font */
-@font-face {
-    font-family: 'MonoLisa';
-    src:
-         url('../fonts/MonoLisa.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  
+  /* Headers */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--bright-foreground-color);
   }
   
-  /* Applying Duskfox-inspired theme and MonoLisa font */
-  body {
-    font-family: 'MonoLisa', monospace;
-    background-color: var(--background-color);
-    color: var(--foreground-color);
-    transition: background-color 0.3s, color 0.3s;
+  /* Additional Styling */
+  p {
+    line-height: 1.6;
+    margin: 0.5em 0;
   }
   
