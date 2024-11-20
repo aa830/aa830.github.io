@@ -1,0 +1,48 @@
+# _config.yml
+
+# Site settings
+title: "Your Site Title"
+description: "A brief description of your site."
+author: "Your Name"
+url: "https://yourusername.github.io" # The base URL of your GitHub Pages site
+
+# Optional social links (uncomment if you want to add these)
+# social:
+   github: "https://github.com/aa830"
+#   twitter: "https://twitter.com/yourusername"
+
+# Build settings
+baseurl: "" # Leave blank unless publishing to a subdirectory
+theme: jekyll-theme-minimal # Uses a clean, minimalist Jekyll theme
+
+# Optional markdown and syntax highlighting settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins (GitHub Pages supports several Jekyll plugins by default)
+plugins:
+  - jekyll-feed # Generates an RSS feed
+  - jekyll-sitemap # Generates a sitemap for SEO
+  - jekyll-seo-tag # Adds SEO metadata to your site
+
+# Optional pagination (uncomment if needed)
+# paginate: 5 # Number of posts per page in pagination
+# paginate_path: "/page:num/"
+
+# Exclude these files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Defaults for posts layout and metadata
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true # Enable comments if you plan to use a service like Disqus
+
+# Optional Google Analytics (uncomment and replace with your ID if needed)
+# google_analytics: "UA-XXXXXXXXX-X"
