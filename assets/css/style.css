@@ -63,12 +63,24 @@
   }
   
   /* Importing MonoLisa Font */
-  @font-face {
+
+  
+/* assets/css/style.css */
+
+/* Importing MonoLisa Font (only using ttf format) */
+@font-face {
     font-family: 'MonoLisa';
-    src: 
-         url('../fonts/MonoLisa.ttf') format('truetype');
+    src: url('../fonts/MonoLisa.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+  }
+  
+  /* Duskfox-inspired Colors - CSS Variables */
+  :root {
+    /* Primary colors */
+    --background-color: #232136;
+    --foreground-color: #e0def4;
+    /* Other colors... (use previous setup) */
   }
   
   /* Global Styles */
@@ -80,6 +92,9 @@
     margin: 0;
     padding: 0;
   }
+  
+  /* Other styles... (same as before) */
+  
   
   /* Link Styles */
   a {
