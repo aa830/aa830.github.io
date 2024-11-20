@@ -1,10 +1,8 @@
-# _config.yml
-
 # Site settings
-title: "aa830's github"
-description: "some coding stuff I do"
+title: "aa830's GitHub"
+description: "Some coding stuff I do"
 url: "https://aa830.github.io" # Your GitHub Pages URL
-baseurl: "" # The subpath of your site, e.g., /blog (leave empty if in the root directory)
+baseurl: "" # Leave empty if in the root directory
 
 # Owner/author information
 author:
@@ -15,7 +13,7 @@ author:
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed   # RSS feed generator
+  - jekyll-feed # RSS feed generator
 
 # GitHub Pages settings
 github:
@@ -30,9 +28,13 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+# Including CSS files
 include:
   - assets/css/style.css
 
 # Social media (optional)
 social_links:
   github: "https://github.com/aa830"
+
+# Theme configuration
+theme: minima # Default Jekyll theme (can be customized in CSS)

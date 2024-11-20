@@ -141,5 +141,23 @@ body {
     background-color: var(--hint-end-background);
     color: var(--search-match-foreground);
   }
+
+  /* assets/css/style.css */
+
+/* Importing MonoLisa Font */
+@font-face {
+    font-family: 'MonoLisa';
+    src:
+         url('../fonts/MonoLisa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
   
+  /* Applying Duskfox-inspired theme and MonoLisa font */
+  body {
+    font-family: 'MonoLisa', monospace;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
   
