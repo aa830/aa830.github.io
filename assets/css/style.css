@@ -1,0 +1,145 @@
+/* assets/css/style.css */
+
+/* Duskfox-inspired Colors - CSS Variables */
+:root {
+    /* Primary colors */
+    --background-color: #232136;
+    --foreground-color: #e0def4;
+    --dim-foreground-color: #cdcbe0;
+    --bright-foreground-color: #eae8ff;
+  
+    /* Cursor colors */
+    --cursor-text-color: #e0def4;
+    --cursor-color: #cdcbe0;
+    --vi-mode-cursor-color: #9ccfd8;
+  
+    /* Search highlight colors */
+    --search-match-foreground: #e0def4;
+    --search-match-background: #63577d;
+    --search-focused-match-background: #a3be8c;
+  
+    /* Footer bar and hint colors */
+    --footer-bar-foreground: #e0def4;
+    --footer-bar-background: #373354;
+    --hint-start-background: #ea9a97;
+    --hint-end-background: #373354;
+  
+    /* Selection colors */
+    --selection-background: #433c59;
+  
+    /* Normal colors */
+    --color-black: #393552;
+    --color-red: #eb6f92;
+    --color-green: #a3be8c;
+    --color-yellow: #f6c177;
+    --color-blue: #569fba;
+    --color-magenta: #c4a7e7;
+    --color-cyan: #9ccfd8;
+    --color-white: #e0def4;
+  
+    /* Bright colors */
+    --bright-black: #47407d;
+    --bright-red: #f083a2;
+    --bright-green: #b1d196;
+    --bright-yellow: #f9cb8c;
+    --bright-blue: #65b1cd;
+    --bright-magenta: #ccb1ed;
+    --bright-cyan: #a6dae3;
+    --bright-white: #e2e0f7;
+  
+    /* Dim colors */
+    --dim-black: #322e42;
+    --dim-red: #d84f76;
+    --dim-green: #8aa872;
+    --dim-yellow: #e6a852;
+    --dim-blue: #4a869c;
+    --dim-magenta: #a580d2;
+    --dim-cyan: #7bb8c1;
+    --dim-white: #b1acde;
+  
+    /* Additional indexed colors */
+    --indexed-color-16: #ea9a97;
+    --indexed-color-17: #eb98c3;
+  }
+
+
+  /* Applying Duskfox-inspired theme */
+
+/* Background and Text */
+body {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  a {
+    color: var(--color-blue);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--bright-blue);
+  }
+  
+  /* Cursor styles */
+  .cursor {
+    background-color: var(--cursor-color);
+    color: var(--cursor-text-color);
+  }
+  
+  /* Search highlights */
+  .search-match {
+    background-color: var(--search-match-background);
+    color: var(--search-match-foreground);
+  }
+  
+  .search-focused-match {
+    background-color: var(--search-focused-match-background);
+    color: var(--search-match-foreground);
+  }
+  
+  /* Footer bar */
+  .footer-bar {
+    background-color: var(--footer-bar-background);
+    color: var(--footer-bar-foreground);
+  }
+  
+  /* Code blocks and selection */
+  code, pre {
+    background-color: var(--selection-background);
+    color: var(--dim-white);
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+  }
+  
+  ::selection {
+    background-color: var(--selection-background);
+    color: var(--foreground-color);
+  }
+  
+  /* Buttons and accents */
+  button, .button {
+    background-color: var(--color-blue);
+    color: var(--background-color);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover, .button:hover {
+    background-color: var(--bright-blue);
+  }
+  
+  /* Hint styles */
+  .hint-start {
+    background-color: var(--hint-start-background);
+    color: var(--search-match-foreground);
+  }
+  
+  .hint-end {
+    background-color: var(--hint-end-background);
+    color: var(--search-match-foreground);
+  }
+  
+  
