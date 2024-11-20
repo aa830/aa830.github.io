@@ -10,7 +10,8 @@ A fun and simple terminal-based project visualizing a 3D spinning donut using C.
 - **Repository**: [donut.c](https://github.com/aa830/homebrew-donut.c)
 - **Homebrew Formula**: [Homebrew Formulae Repository](https://github.com/aaravdarbari/homebrew-formulae)
 
-To install Donut C via Homebrew, use the following commands:
+To install donut.c via Homebrew, use the following commands:
 
 `brew tap aa830/formulae`
 `brew install donut`
+
