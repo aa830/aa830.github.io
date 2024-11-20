@@ -1,14 +1,14 @@
 # _config.yml
 
 # Site settings
-title: "aa830's github website"
-description: "idk some of my code"
+title: "aa830's github"
+description: "some coding stuff I do"
 url: "https://aa830.github.io" # Your GitHub Pages URL
 baseurl: "" # The subpath of your site, e.g., /blog (leave empty if in the root directory)
 
 # Owner/author information
 author:
-  name: "aarav darbari"
+  name: "aa830"
   email: "aarvd2030@gmail.com"
   url: "https://aa830.github.io" # Link to your site or another profile
 
