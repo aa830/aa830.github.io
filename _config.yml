@@ -14,7 +14,6 @@ author:
 
 # Build settings
 markdown: kramdown
-theme: minima # Default theme provided by Jekyll
 plugins:
   - jekyll-feed   # RSS feed generator
 
